@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+}
+
+.App {
+  text-align: center;
+  padding: 60px 20px 20px;
+  min-height: 100vh;
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00796b;
+  color: hsl(0, 0%, 0%);
+  padding: 15px 0;
+  margin: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+.form {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #00796b;
+  padding: 10px 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.form label {
+  color: white;
+}
+
+.form select,
+.form input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form button {
+  padding: 10px 20px;
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.form button:hover {
+  background-color: hsl(0, 0%, 20%);
+}
+
+.response,
+.history {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius:20px;
+  color: hsl(0, 0%, 0%);
+}
+
+.formatted-response {
+  background-color: hsl(0, 0%, 0%);
+  color:hsl(0, 0%, 0%);
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 150px;
+  margin-left:60px;
+  max-width: 90%;
+}
+
+.history-item {
+  margin-bottom: 5px;
+} 
+
+@media screen and (max-width: 768px) {
+  .form select,
+  .form input {
+    width: 90%;
+  }
+
+  .formatted-response {
+    max-width: 95%;
+  }
+}
